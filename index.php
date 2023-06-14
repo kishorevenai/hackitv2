@@ -19,8 +19,7 @@
   </head>
   <body>
     <div class="Home_Page">
-      <?php include('header.php'); ?>  
-
+      <?php include('header.php'); ?> 
       <!-- ---------------------------------------------- -->
       <section class="Home_Part">
         <div class="Home_Part1">
@@ -177,7 +176,7 @@
           <img class="Clogo17" src="./assets/logos/21.png" />
           <img class="Clogo18" src="./assets/logos/sap.png" />
         </div>
-        <a href="./portfolio.html"
+        <a href="./portfolio.php"
           ><button>
             <p>See more</p>
             <img src="./assets/svgs/arrow.svg" /></button
@@ -282,7 +281,7 @@
                 security posture, and comply with regulatory standards.
               </p>              
               <button>
-                <a href="./servicesInner1.html"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
+                <a href="./servicesInner1.php"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
                 </a>
               </button>              
             </div>
@@ -297,7 +296,7 @@
                 networks, and provide actionable recommendations to reduce risk
               </p>              
               <button>
-                <a href="./servicesInner1.html"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
+                <a href="./servicesInner1.php"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
                 </a>
               </button>              
             </div>
@@ -312,7 +311,7 @@
                 address them.
               </p>
               <button>
-                <a href="./servicesInner1.html"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
+                <a href="./servicesInner1.php"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
                 </a>
               </button>
             </div>
@@ -325,13 +324,13 @@
                 Our red teaming service simulates real-world attacks to test the effectiveness of our clients' security defences, and provides actionable recommendations for improvement.
               </p>
               <button>
-                <a href="./servicesInner1.html"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
+                <a href="./servicesInner1.php"><p>Learn more</p><img src="./assets/svgs/Icon (2).svg">
                 </a>
               </button> 
             </div>
           </div>
         </div>
-        <a class="buttonLink" href="./services.html">
+        <a class="buttonLink" href="./services.php">
           <button class="SseeMore">
             <p>See more</p>            
           </button
@@ -466,125 +465,7 @@
             <img class="vector1" src="./assets/vectors/Group 278.svg" />
           </div>
         </section>
-      <footer>
-        <div class="F1">
-          <div>
-            <img src="./assets/favicon.png"/>
-            <p>
-              Generate outside the box thinking with the possibility to targtet
-              the low.
-            </p>
-          </div>
-          <div class="FCT1">
-            <h3>Our Services</h3>
-            <p>Community</p>
-            <p>Events</p>
-            <p>Help center</p>
-            <p>Partners</p>
-          </div>
-          <div class="FCT2">
-            <h3>Company</h3>
-            <p>Integrations</p>
-            <p>Solutions</p>
-            <p>Features</p>
-            <p>Entreprise</p>
-          </div>
-          <div class="FCT3">
-            <h3>Get Email Notification</h3>
-            <p>
-              Generate outside the box thinking with the possibility to targtet
-              the low
-            </p>
-            <form>
-              <input
-                class="FooterEmail"
-                type="email"
-                placeholder="Enter Email..."
-                required
-              />
-              <button type="button" class="footerSubmit">Submit</button>
-            </form>
-          </div>
-          <div class="FCT4">
-            <h3>Our Services</h3>
-            <p>Community</p>
-            <p>Events</p>
-            <p>Help center</p>
-            <p>Partners</p>
-          </div>
-          <div class="FCT5">
-            <h3>Company</h3>
-            <p>Integrations</p>
-            <p>Solutions</p>
-            <p>Features</p>
-            <p>Entreprise</p>
-          </div>
-        </div>
-        <div class="F2">
-          <p>&#169; 2023 Hackit. All Rights Reserved.</p>
-          <div class="Developer">
-            <p>Developed by Aceassured</p>
-            <div class="SocialLogo">
-              <img src="./assets/svgs/Logo (1).svg" />
-              <img src="./assets/svgs/Logo (2).svg" />
-              <img src="./assets/svgs/Logo.svg" />
-            </div>
-          </div>
-        </div>
-      </footer>
-      <footer class="Footer2">
-        <div class="FInner">
-          <div class="FooterCNT">
-            <img src="./assets/logos/g10.svg" />
-            <p>
-              Generate outside the box thinking with the possibility to targtet
-              the low.
-            </p>
-          </div>
-          <div class="FCT">
-            <div class="FCT1">
-              <h3>Our Services</h3>
-              <p>Community</p>
-              <p>Events</p>
-              <p>Help center</p>
-              <p>Partners</p>
-            </div>
-            <div class="FCT2">
-              <h3>Company</h3>
-              <p>Integrations</p>
-              <p>Solutions</p>
-              <p>Features</p>
-              <p>Entreprise</p>
-            </div>
-          </div>
-          <div class="FCT3">
-            <h3>Get Email Notification</h3>
-            <p>
-              Generate outside the box thinking with the possibility to targtet
-              the low
-            </p>
-            <form>
-              <input
-                class="FooterEmail"
-                type="email"
-                placeholder="Enter Email..."
-              />
-              <button type="button" class="footerSubmit">Submit</button>
-            </form>
-          </div>
-          <div class="F2">
-            <p class="Freserved">&#169; 2023 Hackit. All Rights Reserved.</p>
-            <div class="Developer">
-              <p>Developed by Aceassured</p>
-              <div class="SocialLogo">
-                <img src="./assets/svgs/Logo (1).svg" />
-                <img src="./assets/svgs/Logo (2).svg" />
-                <img src="./assets/svgs/Logo.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+        <?php include('footer.php'); ?>      
     </div>
   </body>
 </html>

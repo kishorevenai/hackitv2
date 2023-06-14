@@ -8,26 +8,7 @@
     <link rel="stylesheet" href="./portfolio.css" />
   </head>
   <body>    
-      <header class="Headers">
-        <a href="./index.html"><img src="./assets/favicon.png" class="Logo_favicon" width="136px" alt="logo"></a>
-        <nav class="Header_Links">                
-            <a href="./index.html">Home</a>
-            <a href="./services.html">Our Services</a>
-            <a href="./portfolio.html">Portfolio and Skillset</a>
-            <a href="./company.html">Company</a>
-            <a href="./contactUs.html">Contact us</a>
-            <a href="./Career.html">Career</a>                
-        </nav>
-        <div class="Hamburger"></div>
-        <nav class="Header_Links_Mob">
-            <a href="./index.html">Home</a>
-            <a href="./services.html">Our Services</a>
-            <a href="./portfolio.html">Portfolio and Skillset</a>
-            <a href="./company.html">Company</a>
-            <a href="./contactUs.html">Contact us</a>
-            <a href="./Career.html">Career</a>                             
-        </nav>
-    </header>    
+      <?php include('header.php'); ?>    
     <div class="banner_port">
       <div class="port_head">
         <h1>Portfolio and skillset</h1>
@@ -92,7 +73,7 @@
           <img class="Clogo17" src="./assets/logos/21.png">                
           <img class="Clogo18" src="./assets/logos/sap.png">                
       </div>
-      <a href="./company.html"><button><p>See more</p><img src="./assets/svgs/arrow.svg"></button></a>
+      <a href="./company.php"><button><p>See more</p><img src="./assets/svgs/arrow.svg"></button></a>
     </section>     
     <footer>
         <div class="F1">

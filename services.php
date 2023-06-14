@@ -18,26 +18,7 @@
 </head>
 <body>
   <div class="Home_Page">
-    <header class="Headers">
-      <a href="./index.html"><img src="./assets/favicon.png" class="Logo_favicon" width="136px" alt="logo"></a>
-      <nav class="Header_Links">
-        <a href="./index.html">Home</a>
-        <a href="./services.html">Our Services</a>
-        <a href="./portfolio.html">Portfolio and Skillset</a>
-        <a href="./company.html">Company</a>
-        <a href="./contactUs.html">Contact us</a>
-        <a href="./Career.html">Career</a>
-      </nav>
-      <div class="Hamburger"></div>
-      <nav class="Header_Links_Mob">
-        <a href="./index.html">Home</a>
-        <a href="./services.html">Our Services</a>
-        <a href="./portfolio.html">Portfolio and Skillset</a>
-        <a href="./company.html">Company</a>
-        <a href="./contactUs.html">Contact us</a>
-        <a href="./Career.html">Career</a>
-      </nav>
-    </header>    
+    <?php include('header.php'); ?>    
     <section class="Home_Part">
       <div class="Home_Part1">
           <h2>Safeguard Your Digital Realm With HackIT</h2>
@@ -65,7 +46,7 @@
               help clients identify and mitigate security risks, optimize
               security posture, and comply with regulatory standards.
             </p>
-            <a href="./servicesInner1.html">
+            <a href="./servicesInner1.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -82,7 +63,7 @@
               attack surface of our clients' systems, applications, and
               networks, and provide actionable recommendations to reduce risk
             </p>
-            <a href="./servicesInner2.html">
+            <a href="./servicesInner2.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -99,7 +80,7 @@
               security controls and policies, and develop remediation plans to
               address them.
             </p>
-            <a href="./servicesInner7.html">
+            <a href="./servicesInner7.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -115,7 +96,7 @@
               Our red teaming service simulates real-world attacks to test the effectiveness of our clients' security
               defences, and provides actionable recommendations for improvement.
             </p>
-            <a href="./servicesInner9.html">
+            <a href="./servicesInner9.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -131,7 +112,7 @@
               We offer customized training and capacity building programs to help clients build strong security cultures
               and develop the skills and knowledge needed to protect their assets.
             </p>
-            <a href="./servicesInner10.html">
+            <a href="./servicesInner10.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -146,7 +127,7 @@
             <p class="para">
               Our source code review service helps clients identify vulnerabilities and security weaknesses in their software applications, and develop effective remediation plans.
             </p>
-            <a href="./servicesInner5.html">
+            <a href="./servicesInner5.php">
             <button class="ser_btn">
               <p>Learn more</p>
               <img src="./assets/service/Icon.png" alt="">
@@ -161,7 +142,7 @@
             <p class="para">
               We offer fully managed security services that provide clients with 24/7 monitoring, detection, and response to security incidents, as well as ongoing threat intelligence and expert guidance.
             </p>
-            <a href="./servicesInner6.html">
+            <a href="./servicesInner6.php">
             <button class="ser_btn">
               <p>Learn more</p>
               <img src="./assets/service/Icon.png" alt="">
@@ -177,7 +158,7 @@
               Our threat intelligence services provide clients with timely and actionable intelligence on emerging
               threats and attack trends, helping them stay ahead of the curve.
             </p>
-            <a href="./servicesInner11.html">
+            <a href="./servicesInner11.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -192,7 +173,7 @@
             <p class="para">
               We help clients design, build, and optimize their security operations centers (SOCs) and network operations centres (NOCs) to improve incident response and reduce risk.
             </p>
-            <a href="./servicesInner4.html">
+            <a href="./servicesInner4.php">
             <button class="ser_btn">
               <p>Learn more</p>
               <img src="./assets/service/Icon.png" alt="">
@@ -208,7 +189,7 @@
               Our vulnerability assessment and penetration testing services help clients identify and prioritize
               vulnerabilities in their systems, and develop effective remediation plans
             </p>
-            <a href="./servicesInner8.html">
+            <a href="./servicesInner8.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
@@ -224,7 +205,7 @@
               We help clients navigate complex compliance requirements and regulatory standards, and develop effective
               strategies for compliance.
             </p>
-            <a href="./servicesInner3.html">
+            <a href="./servicesInner3.php">
               <button class="ser_btn">
                 <p>Learn more</p>
                 <img src="./assets/service/Icon.png" alt="">
