@@ -1,0 +1,1234 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+a {
+  text-decoration: none;  
+  color: black;
+  font-weight: 600;    
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body p {
+  color: #4e4e4e;
+  line-height: 26px;
+  margin-top: 0px;
+}
+.Headers{    
+
+  background-color: #ffffff;
+ top: 0;
+ position: sticky;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;  
+ height: 80px;
+ border-radius: 0 0 10px 10px;
+}
+.Header_Links{        
+  display: flex;
+  justify-content: center;   
+  gap: 80px;
+  align-items: center;    
+  margin-right: 90px;    
+}
+.Logo_favicon{
+  margin-left: 90px;
+}
+.Header_Links_Mob{
+  display: none;
+}
+.Hamburger{
+  display: none;
+}
+
+@media screen and (max-width:3840px) and (min-width:2256px) {
+  .Headers{
+      width: 1609px;              
+      margin: auto;
+  }    
+}
+
+@media screen and (max-width:2255px) and (min-width:1920px) {
+  .Headers {
+    width: 1900px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px) {
+  .Why_Hackit .Why_Hackit_boxe1 {
+      width: 1360px;        
+      margin: auto;
+      display: flex;        
+      align-items: center;
+  }
+  .Why_Hackit .Why_Hackit_boxe1 div {
+      width: 400px;          
+  } 
+  .Why_Hackit .Why_Hackit_boxe1 div p {
+      width: 100%;
+  }
+  .Why_Hackit .Why_Hackit_boxe2 {
+      margin-top: 30px;
+      width: 1360px;        
+  }
+  .Why_Hackit .Why_Hackit_boxe2 div {
+      width: 630px;        
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {    
+  .Header_Links {      
+    width: 900px;
+    margin-right: 20px;   
+    flex-grow: 1;
+    gap: 20px;    
+  }
+  .Headers .Logo_favicon{ 
+    margin-left: 20px;      
+    flex-grow: 3;
+  }
+}
+
+
+@media screen and (max-width:1023px ) {
+  .Header_Links{
+      display: flex;
+      justify-content: center;   
+      gap: 40px;
+      align-items: center;
+      margin-right: 50px;
+  }
+  .Logo_favicon{
+      margin-left: 50px;
+  }
+  .Header_Links{
+      display: none;
+  }
+  .Header_Links_Mob{    
+      z-index: 1000000px;          
+      transition: 0.5s;   
+      border-top-right-radius: 20px;        
+      border-bottom-right-radius: 20px;
+      transform: translateX(-100%);
+      height: 300px;
+      color: white;        
+      width: 500px;
+      top: 80px;        
+      position: absolute;
+      display: flex;        
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f05454;   
+      gap: 20px;     
+  }
+  .Header_Links_Mob.active{
+      z-index: -1000000;
+      transition: 0.5s;   
+      border-top-right-radius: 20px;        
+      border-bottom-right-radius: 20px;                
+      transform: translateX(0px);
+      height: 300px;
+      color: white;        
+      width: 500px;
+      top: 80px;        
+      position: absolute;
+      display: flex;        
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f05454;   
+      border: 1px solid #EAEBF0; 
+      gap: 20px;       
+  }
+  .Header_Links_Mob a{      
+      position: relative;                  
+      z-index: 999;        
+  }
+  .Hamburger{                     
+      transition: 0.3s;
+      display: block;
+      position: relative;        
+      margin-right: 70px;
+      height: 5px;
+      width: 30px;        
+      background-color: #f05454;        
+  }
+  .Hamburger::before{          
+      transition: 0.3s;      
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      left: 0px;
+      position: absolute;
+      content:' ';
+      top: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger::after{        
+      transition: 0.3s;
+      left: 0px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      position: absolute;
+      content:' ';
+      bottom: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger.active{        
+      display: block;
+      position: relative;
+      margin-right: 70px;
+      height: 5px;
+      width: 30px;        
+      background-color: #f05454;                
+  }
+  .Hamburger.active::before{           
+      transition: 0.3s;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      position: absolute;        
+      left: -10px;
+      content:' ';
+      top: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger.active::after{        
+      transition: 0.3s;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      position: absolute;
+      left: 10px;
+      content:' ';        
+      bottom: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger{
+      transition: 0.3s;
+      display: block;
+      position: relative;
+      margin-right: 30px;
+      height: 5px;
+      width: 30px;        
+      background-color: #f05454;        
+  }
+  .Hamburger.active{
+      margin-right: 30px;
+  }
+  .Logo_favicon{
+      margin-left: 30px;
+  }
+  .Header_Links_Mob.active{        
+      width: 70%;        
+  }
+}
+
+/* -------------------Home_Part---------------------- */
+
+.Home_Part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.Home_Part1{    
+  text-align: left;    
+  display: grid;    
+  margin-right: 122px;
+}
+.Home_Part1 h2{    
+  margin-bottom: 0;    
+  font-weight: 700;
+  font-size: 52px;
+  width: 624px;
+}
+.Home_Part1 p{
+  margin-bottom: 16px;    
+  font-weight: 400;
+  font-size: 16px;
+  width: 624px;    
+}
+.Home_Part1 button{
+  color: white;
+  width: 121px;
+  height: 46px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #f05454;
+  border: none;
+  border-radius: 6px;
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .Home_Part1 h2{   
+      display: none;         
+  }
+  .Home_Part1 p{
+      display: none;        
+  }
+  .Home_Part1 button{
+      display: none;     
+  }
+  .Home_Part1{
+      position: absolute;                
+  }
+  .Home_Part img{
+      width: 800px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1023px)  {     
+  .Home_Part{                   
+      z-index: -50000;  
+      display: grid;            
+      height: auto;             
+  }         
+  .Home_Part1 h2{   
+      display: block;
+  }
+  .Home_Part1 button{
+      display: block;     
+  }
+  .Home_Part  img{        
+      left: 100px;        
+      position: relative;
+      width: 500px;
+  }
+  .Home_Part1{          
+      margin-left: 50px;                
+  }
+}
+
+@media screen and (max-width:767px) and (min-width:375px){
+  .Home_Part {        
+      height: auto;        
+      margin-top: 40px;        
+  }
+  .Home_Part img{
+    display: none;
+  }
+  .Home_Part1{           
+    width: 400px; 
+    margin: auto;        
+    /* left: 0;
+    top: 0;
+    position: relative;         */
+  }
+  .Home_Part .Home_Part1 p {  
+    margin-top: 0;  
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
+  .Home_Part1 h2{         
+      margin-bottom: 24px;      
+      width: 323px;               
+      font-size: 36px;
+      font-weight: 700;           
+  }
+  .Home_Part1 p{        
+      display: none;
+  }
+  .Home_Part1{           
+      width: 340px; 
+      margin: auto;        
+      /* left: 0;
+      top: 0;
+      position: relative;         */
+  }
+}
+.banner_port {
+  width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+.port_head {
+  width: 624px;
+}
+.port_head h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 60px;
+}
+.port_img {
+  width: 548px;
+  height: 483.67px;
+}
+.port_container1 {
+  margin: 100px 0px 90px 0px;
+}
+.port_details {
+  margin: auto;
+  text-align: center;
+  width: 1010px;
+}
+.port_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+}
+.port_icons2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.port_icons3{
+    display: none;
+}
+
+@media screen and (max-width:3840px) and (min-width:2256px) {
+  .port_icons {
+    width: 1900px;
+    margin: auto;
+  }
+  .port_icons2 {
+    width: 1900px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1439px) {
+  .banner_port {
+    width: 100%;    
+  }
+  .banner_port .port_img {
+    width: 800px;
+  }
+  .port_head {
+    display: none ;
+    width: 400px;
+  }
+  .port_img {
+    width: 400px;
+    height: auto;
+  }
+  .port_head h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .port_details {
+    width: 800px;
+  }
+  .port_icons img {
+    width: 200px;
+  }
+  .port_icons2 img {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .banner_port {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .port_head {
+    width: 624px;
+  }
+  .port_img {
+    width: 322.73px;
+    height: auto;
+    margin-left: 350px;
+  }
+  .port_head h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 60px;
+  }
+  .port_details {
+    width: 680px;
+  }
+  .port_icons{
+    display: none;
+  }
+  .port_icons2 {
+    display: none;    
+    
+  }
+  .port_icons3{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    width: 640px;
+     align-items: center;
+    place-items: center;
+  }
+  .port_icons3 img{
+     width: 200px;
+  }
+  .port_icons3 img:last-child{
+    grid-column: 1 / -1;
+ }
+}
+@media screen and (max-width: 767PX) {
+  .banner_port {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .port_head {
+    width: 348px;
+  }
+  .port_img {
+    display: none;
+  }
+  .port_head h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 8px;
+  }
+  .port_details{
+    width: 195px;
+  }
+  .port_details p{
+    display: none;
+  }
+  .port_icons {
+    display: none;
+  }
+  .port_icons2 {
+    display: none;
+  }
+  .port_icons3{
+    width: 342px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 170px 170px;
+    place-items: center;
+  }
+  .port_icons3 img{
+    width: 135px;
+  }
+  .port_icons3 img:last-child{
+    grid-column: 1/-1;
+  }
+} 
+
+
+/* ---------------------------------------Our Customers------------------------------------------ */
+.Our_Customers_Logo{
+    height: auto;    
+    position: relative;
+    text-align: center;    
+}
+.Our_Customers_Logo h2{   
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    z-index: -10;
+}
+.Our_Customers_Logo p {
+    margin-bottom: 21px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.Our_Customers_Logo .Bubbles img{    
+    border: solid 1px rgb(173, 171, 171);
+    border-radius:50% ;
+    position: absolute;
+    transition: 2s;
+}
+
+.Our_Customers_Logo .Bubbles{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;        
+    position: relative;    
+    height: 500px;    
+    z-index: -10;
+}
+
+.Bubbles .Clogo1{      
+    display: flex;  
+    justify-content: center;    
+    top: 45px;
+    left: 134px;
+    height: 150px;
+    width: 150px;
+    object-fit: contain; 
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;         
+}
+.Bubbles .Clogo2{        
+    width: 113px;
+    top: 219px;
+    left: 94px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo3{    
+    width: 113px;
+    top: 173px;
+    left: 283px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo4{
+    width: 152px;    
+    top: 336px;
+    left: 244px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo5 {        
+    width: 108px;
+    top: 290px;
+    left: 433px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo6{    
+    width: 113px;
+    top: 80px;
+    left: 433px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo7{        
+    width: 152px;
+    top: 169px;
+    left: 622px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo8{    
+    width: 109px;
+    top: 381px;
+    left: 642px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo9{    
+    width: 113px;
+    top: 80px;
+    left: 811px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo10{    
+    width: 152px;
+    top: 286px;
+    left: 843px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo11{
+    background-color: #fe0000;
+    width: 113px;
+    top: 126px;
+    left: 1008px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo12{        
+    width: 152px;
+    top: 286px;
+    left: 1053px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo13{        
+    width: 147px;
+    top: 64px;
+    left: 1273px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo14{        
+    width: 112px;
+    top: 232px;
+    left: 1244px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+
+}
+.Bubbles .Clogo15{        
+    width: 112px;
+    top: 86px;
+    left: 1509px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo16{        
+    width: 111px;
+    top: 290px;
+    left: 1509px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;    
+ 
+}
+.Bubbles .Clogo17{        
+    width: 152px;
+    top: 177px;
+    left: 1650px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo18{            
+    width: 113px;
+    top: 379px;
+    left: 1679px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;
+}
+
+.Our_Customers_Logo button{    
+    position: relative;
+    z-index: -10;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;            
+    height: 50px;
+    background-color: transparent;    
+    border: none;
+    color: #437EF7;
+    gap: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 100px;
+ }
+button p{
+  color: #437EF7;
+}
+ .Our_Customers_Logo button p {
+    margin: 0   ;
+ }
+
+
+ @media screen and (max-width:3840px) and (min-width:2256px) {
+    .Our_Customers_Logo .Bubbles{  
+        width: 1900px;        
+        margin: auto;        
+    }    
+ }
+@media screen and (max-width:2255px) and (min-width:1920px) { 
+    .Our_Customers_Logo .Bubbles{          
+        width: 1900px;
+        margin: auto;        
+    }
+}
+
+@media screen and (max-width:1919px) and (min-width:1600px) {
+    .Our_Customers_Logo .Bubbles {
+        width: 1500px;        
+        margin: auto;        
+    }
+}
+
+@media screen and (max-width:1441px) {
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+ }
+ @media screen and (max-width:1025px) {    
+    .Our_Customers_Logo .Our_Customers_Desc{
+        display: none;
+    }    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+    .Bubbles .Clogo11{
+        display: none;
+    }
+ }
+ @media screen and (max-width:767px) {    
+    .Our_Customers_Logo button{
+        width: 111px;
+    }    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+    .Bubbles .Clogo7{
+        left: 600px;        
+    }
+    .Bubbles .Clogo1{
+        top: 20px;
+        left: 50px;        
+    }
+ }
+ @media screen and (max-width:767px){      
+    .Our_Customers_Logo h2{        
+        text-align: center;
+        margin-left: 14px;
+    }  
+    .Our_Customers_Logo .Bubbles{ 
+        width: 425px;
+        margin: auto;
+        overflow: hidden;
+        width: 375px;        
+        position: relative;            
+        height: 350px;
+    }  
+    .Bubbles .Clogo1{
+        display: none;
+    }
+    .Bubbles .Clogo2{        
+        display: none;
+    }
+    .Bubbles .Clogo3{
+        display: none;
+    }
+    .Bubbles .Clogo4{
+        display: none;
+    }        
+    .Bubbles .Clogo5{        
+        top: 154px;
+        left: 15px;
+        width: 69px;
+    }    
+    .Bubbles .Clogo6{   
+        width: 72px;     
+        top: 20px;
+        left: 13px;                
+    }    
+    .Bubbles .Clogo7{        
+        width: 92px;
+        top: 78px;
+        left: 135px;                
+    }   
+    .Bubbles .Clogo8{
+        top: 210px;
+        left: 134px;        
+    }
+    .Bubbles .Clogo9{        
+        width: 72px;
+        top: 19.7px;
+        left: 252.63px;                
+    }
+    .Bubbles .Clogo10{        
+        width: 91px;
+        top: 152px;
+        left: 276px;        
+    }    
+ }
+ @media screen and (max-width:376px) {  
+  .Our_Customers_Logo button{
+    width: 111px;        
+}   
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 400px;    
+    
+    }  
+    .Bubbles .Clogo1{
+        display: none;
+    }
+    .Bubbles .Clogo2{        
+        display: none;
+    }
+    .Bubbles .Clogo3{
+        display: none;
+    }
+    .Bubbles .Clogo4{
+        display: none;
+    }        
+    .Bubbles .Clogo6{        
+        top: 20px;
+        left: 20px;        
+    }
+ }
+
+@keyframes bounce {
+   0%{
+     transform: translateY(0px);
+   }
+   50%{
+    transform: translateY(-20px);
+   }
+   100%{
+    transform: translateY(0px);
+   }   
+}
+@keyframes bounce-back {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+     transform: translateY(10px);
+    }
+    100%{
+     transform: translateY(0px);
+    }   
+ }
+
+
+
+
+
+/*.......... FOOTER........... */
+.Footer2
+{
+  border-radius: 10px 10px 0 0;
+  display: none;
+  background-color: #8b8a8a;
+}
+footer {
+    border-radius: 10px 10px 0 0;
+    margin-top: 117px;
+    padding-top: 58px;
+    background-color: #8b8a8a;
+}
+footer .F1 {
+    margin: auto;
+    width: 1310px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;    
+}
+/* .footer .F1 div:first-child{  
+    
+} */
+footer .F1 div:first-child p{
+    color: #EAEBF0;
+    width: 247px;    
+}
+footer .F1 .FCT1,footer .F1 .FCT2{    
+    height: 180px;    
+    color: white;
+}
+footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
+  color: white;
+}
+
+footer .F1 .FCT3 {
+    color: #EAEBF0;
+    height: auto;
+    width: 302px;    
+}
+footer .F1 .FCT3 div {       
+     display: flex;
+     width: 302px;
+}
+footer .F1 .FCT3 div button {
+    color: #EAEBF0;
+    font-size: 15px;
+    font-weight: 600;
+    width: 88px;
+    background-color: #f05454;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 46px;
+}
+footer .F1 .FCT3 div input {
+    height: 44px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    padding-left:16px;
+    color: #A5ACBA;
+    font-size: 15px;
+    font-weight: 400;
+    background: #30475E;
+}
+footer .F2 {    
+    color: #EAEBF0;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 1310px;  
+    margin: auto;
+    margin-top: 97px;   
+    padding-bottom: 50px;    
+}
+
+footer .F2 p {
+  color: white;
+}
+footer .Developer {
+    display: grid;
+    grid-gap: 24px;
+}
+footer .Developer p {
+    margin-top: 60px;
+}
+footer .Developer .SocialLogo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .Developer .SocialLogo img {
+    margin-right: 29px;
+}
+footer .F1 .FCT4 {
+    display: none;
+}
+footer .F1 .FCT5 {
+    display: none;
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
+    color: white;
+  }
+    footer .F1{        
+        width: 768px;        
+        margin: auto;
+        display: grid;        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 62px;
+    }    
+    footer .F1 .FCT1 {
+        display: none;
+    } 
+    footer .F1 .FCT2 {
+        display: none;
+    } 
+    footer .F1 .FCT4 {
+        color: #EAEBF0;
+        display: block;
+    }
+    footer .F1 .FCT4  p  {
+      color: white;
+    }
+    footer .F1 .FCT5 {
+        color: #EAEBF0;
+        display: block;
+    }
+    footer .F1 .FCT5  p {
+      color: white;
+    }
+    footer .F2 {        
+        margin-top: 0;
+        width: 768px;
+    }
+    footer .F2 .Developer p {        
+        margin-top: 60px;
+    }
+    
+}
+
+@media screen and (min-width:768px)  and (max-width:1023px) {
+  footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
+    color: white;
+  }
+    footer .F1{        
+        width: 626px;        
+        margin: auto;
+        display: grid;        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 62px;
+    } 
+    footer .F2 {        
+        width: 626px;
+    }   
+    footer .F2 .Developer p {        
+        margin-top: 65px;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+  footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
+    color: white;
+  }
+    footer {
+        display: none;
+    }
+    .Footer2{                
+        display: grid;        
+        place-items: center;
+
+    }
+    .Footer2 .FInner{           
+        width: 400px;
+        display: block;
+        margin: auto;
+    }
+    .Footer2 .FooterCNT p{
+        color: #EAEBF0;        
+    }
+    .Footer2 .FCT {
+        color: #EAEBF0;
+        width: 272px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    .Footer2    .FCT3 {
+        color: #EAEBF0;
+        height: auto;
+        width: 302px;    
+    }
+    .Footer2    .FCT3 div {       
+         display: flex;
+         width: 302px;
+    }
+    .Footer2    .FCT3 div button {
+        color: #EAEBF0;
+        font-size: 15px;
+        font-weight: 600;
+        width: 88px;
+        background-color: #f05454;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 46px;
+    }
+    .Footer2    .FCT3 div input {
+        height: 44px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border: none;
+        padding-left:16px;
+        color: #A5ACBA;
+        font-size: 15px;
+        font-weight: 400;
+        background: #30475E;
+    }  
+    .Footer2 .F2 {
+        width: 262px;
+        display: grid;
+        place-items: center;
+        margin: auto;
+    }
+    .Footer2 .F2 .Freserved {
+        text-align: center;
+        margin-top: 24px;
+    }
+    .Footer2 .F2 .Developer p{
+        text-align: center;
+        margin-top: 0;      
+        grid-gap: 16px;        
+    }
+    .Footer2 .FInner {
+      width: 330px ;
+      margin: auto;
+  }
+  .Footer2 .FInner .FooterCNT {        
+      width: 100%;
+  }
+  .Footer2 .FooterCNT p{
+      color: #EAEBF0;    
+  }
+  .Footer2 .FooterCNT p{
+      width: 300px;        
+      padding: 0;
+
+      margin-right: 0;
+  }
+  .Footer2 .F2 {
+      width: 300px;
+      margin: auto;
+      
+  }
+    
+}
+/* @media screen and (max-width:376px) {
+  
+    .Footer2 .FInner {
+        width: 330px ;
+        margin: auto;
+    }
+    .Footer2 .FInner .FooterCNT {        
+        width: 375px;                
+    }
+    .Footer2 .FooterCNT p{
+        color: #EAEBF0;    
+    }
+    .Footer2 .FooterCNT p{
+        width: 300px;        
+        padding: 0;
+
+        margin-right: 0;
+    }
+    .Footer2 .F2 {
+        width: 300px;
+        margin: auto;
+        
+    }
+    
+} */
